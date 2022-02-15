@@ -8,10 +8,7 @@ package udp.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-/**
- *
- * @author NTK
- */
+
 public class DAO {
     protected static Connection con;//declare the connection
     
@@ -22,7 +19,7 @@ public class DAO {
  
             try {
                 Class.forName(dbClass);
-                con = DriverManager.getConnection (dbUrl, "root", "geomchi@1076");
+                con = DriverManager.getConnection (dbUrl, "root", "");
             }catch(Exception e) {
                 e.printStackTrace();
             }
